@@ -1,0 +1,110 @@
+[
+    {
+        "label": "is_adult",
+        "kind": 2,
+        "importPath": "00_choosing_returns",
+        "description": "00_choosing_returns",
+        "peekOfCode": "def is_adult(age):\n    if age >= 18:\n        return True\n    else:\n        return False\ndef main():\n    while True:\n        try:\n            age = int(input(\"Enter your age: \"))\n            if is_adult(age):",
+        "detail": "00_choosing_returns",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "00_choosing_returns",
+        "description": "00_choosing_returns",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            age = int(input(\"Enter your age: \"))\n            if is_adult(age):\n                print(\"You are an adult.\")\n            else:\n                print(\"You are not an adult.\")\n            break\n        except ValueError:",
+        "detail": "00_choosing_returns",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "01_greetings",
+        "description": "01_greetings",
+        "peekOfCode": "def main():\n    name : str = input(\"What's your name? \")\n    print(greet(name))\n# There is no need to edit code beyond this point\ndef greet(name):\n    return \"Greetings \" + name + \"!\"\nif __name__ == '__main__':\n    main()",
+        "detail": "01_greetings",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "01_greetings",
+        "description": "01_greetings",
+        "peekOfCode": "def greet(name):\n    return \"Greetings \" + name + \"!\"\nif __name__ == '__main__':\n    main()",
+        "detail": "01_greetings",
+        "documentation": {}
+    },
+    {
+        "label": "in_range",
+        "kind": 2,
+        "importPath": "02_in_range",
+        "description": "02_in_range",
+        "peekOfCode": "def in_range(n, low, high):\n    if n >= low and n <= high:\n        return True\n    else:\n        return False\ndef main():\n    while True:\n        try:\n            n = int(input(\"Enter a number: \"))\n            low = int(input(\"Enter a low number: \"))",
+        "detail": "02_in_range",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "02_in_range",
+        "description": "02_in_range",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            n = int(input(\"Enter a number: \"))\n            low = int(input(\"Enter a low number: \"))\n            high = int(input(\"Enter a high number: \"))\n            print(in_range(n, low, high))\n            break\n        except ValueError:\n            print(\"Invalid input. Please enter a valid integer.\")",
+        "detail": "02_in_range",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "03_in_stock",
+        "description": "03_in_stock",
+        "peekOfCode": "def main():\n\tfruit : str = input(\"Enter a fruit: \")\n\tstock = num_in_stock(fruit)\n\tif stock == 0:\n\t\tprint(\"This fruit is not in stock.\")\n\telse:\n\t\tprint(\"This fruit is in stock! Here is how many:\" + str(stock))\ndef num_in_stock(fruit):\n\tif fruit == 'apple':\n\t\treturn 2",
+        "detail": "03_in_stock",
+        "documentation": {}
+    },
+    {
+        "label": "num_in_stock",
+        "kind": 2,
+        "importPath": "03_in_stock",
+        "description": "03_in_stock",
+        "peekOfCode": "def num_in_stock(fruit):\n\tif fruit == 'apple':\n\t\treturn 2\n\tif fruit == 'durian':\n\t\treturn 4\n\tif fruit == 'pear':\n\t\treturn 1000\n\tif fruit == 'banana':\n\t\treturn 6\n\tif fruit == 'kiwi':",
+        "detail": "03_in_stock",
+        "documentation": {}
+    },
+    {
+        "label": "\tstock",
+        "kind": 5,
+        "importPath": "03_in_stock",
+        "description": "03_in_stock",
+        "peekOfCode": "\tstock = num_in_stock(fruit)\n\tif stock == 0:\n\t\tprint(\"This fruit is not in stock.\")\n\telse:\n\t\tprint(\"This fruit is in stock! Here is how many:\" + str(stock))\ndef num_in_stock(fruit):\n\tif fruit == 'apple':\n\t\treturn 2\n\tif fruit == 'durian':\n\t\treturn 4",
+        "detail": "03_in_stock",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_info",
+        "kind": 2,
+        "importPath": "04_multiple_returns",
+        "description": "04_multiple_returns",
+        "peekOfCode": "def get_user_info():\n    first_name = str(input(\"What is your first name?: \"))\n    last_name = str(input(\"What is your last name?: \"))\n    email_address = str(input(\"What is your email address?: \"))\n    return first_name, last_name, email_address\n########## No need to edit code past this point :) ##########\ndef main():\n    user_data = get_user_info()\n    print(\"Received the following user data:\", user_data)\nif __name__ == \"__main__\":",
+        "detail": "04_multiple_returns",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "04_multiple_returns",
+        "description": "04_multiple_returns",
+        "peekOfCode": "def main():\n    user_data = get_user_info()\n    print(\"Received the following user data:\", user_data)\nif __name__ == \"__main__\":\n     main()",
+        "detail": "04_multiple_returns",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "05_subtract_7",
+        "description": "05_subtract_7",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            num = int(input(\"Enter a number: \"))\n            print(\"The output after subtracting 7:\",num - 7)\n            break\n        except ValueError:\n            print(\"Invalid input. Please enter a valid integer.\")\nif __name__ == \"__main__\":\n    main()",
+        "detail": "05_subtract_7",
+        "documentation": {}
+    }
+]

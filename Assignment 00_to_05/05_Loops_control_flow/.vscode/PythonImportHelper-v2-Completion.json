@@ -1,0 +1,65 @@
+[
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "00_guess_my_number",
+        "description": "00_guess_my_number",
+        "peekOfCode": "def main():\n    my_number = random.randint(1, 99)\n    while True:\n        try:\n            guess = int(input(\"I am thinking a number between 0 and 99... Enter a guess: \"))\n            break\n        except ValueError:\n            print(\"Enter a valid number\")\n            continue\n    while True:",
+        "detail": "00_guess_my_number",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "01_fibonacci_series",
+        "description": "01_fibonacci_series",
+        "peekOfCode": "def main():\n    lst = []\n    curr_term = 0  # The 0th Fibonacci Number\n    next_term = 1  # The 1st Fibonacci Number\n    while len(lst) <= (VALUE-1):\n        lst.append(curr_term)\n        term_after_next = curr_term + next_term\n        curr_term = next_term\n        next_term = term_after_next\n    print(\"The Fibonacci Series is: \", lst)",
+        "detail": "01_fibonacci_series",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "02_print_events",
+        "description": "02_print_events",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            numbers = int(input(\"Enter number do you want to print even numbers: \"))\n            if numbers <= 0:\n                print(\"Please enter a number greater than 0.\")\n                continue\n            break\n        except ValueError:\n            print(\"Please enter a valid number.\")",
+        "detail": "02_print_events",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "03_wholesome_machine",
+        "description": "03_wholesome_machine",
+        "peekOfCode": "def main():\n    Affirmation = \"I am capable of doing anything I put my mind to.\"\n    print(\"The affirmation is: \\n\"+Affirmation)\n    while True:\n        user_input = input(\"Please type the following affirmation: \")\n        if user_input == Affirmation:\n            print(\"Thanks for the affirmation.\")\n            break\n        else:\n            print(\"That was not the affirmation. \")",
+        "detail": "03_wholesome_machine",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "04_liftoff",
+        "description": "04_liftoff",
+        "peekOfCode": "def main():\n    for i in range(10, 0, -1):\n        print(i,end=' ')\n    print(\"Liftoff!\")\nif __name__ == \"__main__\": \n    main()",
+        "detail": "04_liftoff",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "05_double_it",
+        "description": "05_double_it",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            num = int(input(\"Enter a number: \"))\n            if num >= 100 or num < 0:\n                print(\"The number is greater than 100.\")\n                continue\n            break\n        except ValueError:\n            print(\"Enter a valid number.\")",
+        "detail": "05_double_it",
+        "documentation": {}
+    }
+]

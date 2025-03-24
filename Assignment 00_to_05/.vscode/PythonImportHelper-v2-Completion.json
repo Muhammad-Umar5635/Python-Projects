@@ -1,0 +1,56 @@
+[
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "00_intro_python.01_add_two_numbers",
+        "description": "00_intro_python.01_add_two_numbers",
+        "peekOfCode": "def main():\n    # Prompt the user to enter two numbers\n    while True:\n        # Try to convert the input to an integer\n        try:\n            num_1 = int(input(\"Enter first number: \"))\n            break\n        except ValueError:\n            print(\"Invalid input. Please enter a valid number.\")\n            continue",
+        "detail": "00_intro_python.01_add_two_numbers",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "00_intro_python.02_agreement_bot",
+        "description": "00_intro_python.02_agreement_bot",
+        "peekOfCode": "def main():\n    Animal_Name = str(input(\"What's your Favorite Animal name? \"))\n    print(f\"My Favorite Animal name is also {Animal_Name}!\")\nif __name__ == \"__main__\":\n    main()",
+        "detail": "00_intro_python.02_agreement_bot",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "00_intro_python.03_fahrenheit_to_celsius",
+        "description": "00_intro_python.03_fahrenheit_to_celsius",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            fahrenheit = float(input(\"Enter the temperature in Fahrenheit: \"))\n            break\n        except ValueError:\n            print(\"Invalid input. Please enter a valid number.\")\n            continue\n    celsius = (fahrenheit - 32) * 5/9\n    print(f\"{fahrenheit} degrees Fahrenheit is equal to {celsius:.2f} degrees Celsius.\")",
+        "detail": "00_intro_python.03_fahrenheit_to_celsius",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "00_intro_python.04_how_old_are_they",
+        "description": "00_intro_python.04_how_old_are_they",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            anton = int(input(\"Enter Anton's age: \"))\n            if anton <=0:\n                print(\"Age never be Negative or Zero.\")\n                continue\n            break\n        except ValueError:\n            print(\"Invalid input. Please enter a valid number.\")",
+        "detail": "00_intro_python.04_how_old_are_they",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "00_intro_python.05_triangle_perimeter",
+        "description": "00_intro_python.05_triangle_perimeter",
+        "peekOfCode": "def main():\n    # Get the 3 side lengths of the triangle\n    while True:\n        try:\n            side1: float = float(input(\"What is the length of side 1? \"))\n            break\n        except ValueError:\n            print(\"Invalid input. Please enter a valid number.\")\n            continue\n    while True:",
+        "detail": "00_intro_python.05_triangle_perimeter",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "00_intro_python.06_square_number",
+        "description": "00_intro_python.06_square_number",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            # Make sure to cast the input to a float so we can do math with it!\n            num: float = float(input(\"Enter a number to see its square: \")) \n            break\n        except ValueError:\n            print(\"Invalid input. Please enter a valid number.\")\n            continue\n    # Print out the square",
+        "detail": "00_intro_python.06_square_number",
+        "documentation": {}
+    }
+]

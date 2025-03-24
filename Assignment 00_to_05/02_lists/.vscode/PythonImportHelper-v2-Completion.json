@@ -1,0 +1,128 @@
+[
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "01_add_many_numbers",
+        "description": "01_add_many_numbers",
+        "peekOfCode": "def main():\n    def sum_of_list(list):\n        sum = 0\n        for i in list:\n            sum += i\n        return sum\n    while True:\n        try:\n            lst = input(\"Enter a list of numbers (e.g., 1,2,3): \")\n            lst = [int(i.strip()) for i in lst.split(',')]",
+        "detail": "01_add_many_numbers",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "02_double_list",
+        "description": "02_double_list",
+        "peekOfCode": "def main():\n    def double_list(list):\n        return [i** 2 for i in list]\n    while True:\n        try:\n            lst = input(\"Enter a list of numbers (e.g., 1,2,3): \")\n            lst = [int(i.strip()) for i in lst.split(',')]\n            break\n        except ValueError:\n            print(\"Invalid input. Please enter a list of numbers.\")",
+        "detail": "02_double_list",
+        "documentation": {}
+    },
+    {
+        "label": "EraserApp",
+        "kind": 6,
+        "importPath": "03_erase_canvas",
+        "description": "03_erase_canvas",
+        "peekOfCode": "class EraserApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"Eraser Canvas\")\n        # Create canvas\n        self.canvas = tk.Canvas(root, width=CANVAS_WIDTH, height=CANVAS_HEIGHT, bg=\"white\")\n        self.canvas.pack()\n        # Draw a grid of blue squares\n        self.cells = []\n        for row in range(0, CANVAS_HEIGHT, CELL_SIZE):",
+        "detail": "03_erase_canvas",
+        "documentation": {}
+    },
+    {
+        "label": "CANVAS_WIDTH",
+        "kind": 5,
+        "importPath": "03_erase_canvas",
+        "description": "03_erase_canvas",
+        "peekOfCode": "CANVAS_WIDTH = 400\nCANVAS_HEIGHT = 400\nCELL_SIZE = 40\nERASER_SIZE = 10\nclass EraserApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"Eraser Canvas\")\n        # Create canvas\n        self.canvas = tk.Canvas(root, width=CANVAS_WIDTH, height=CANVAS_HEIGHT, bg=\"white\")",
+        "detail": "03_erase_canvas",
+        "documentation": {}
+    },
+    {
+        "label": "CANVAS_HEIGHT",
+        "kind": 5,
+        "importPath": "03_erase_canvas",
+        "description": "03_erase_canvas",
+        "peekOfCode": "CANVAS_HEIGHT = 400\nCELL_SIZE = 40\nERASER_SIZE = 10\nclass EraserApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"Eraser Canvas\")\n        # Create canvas\n        self.canvas = tk.Canvas(root, width=CANVAS_WIDTH, height=CANVAS_HEIGHT, bg=\"white\")\n        self.canvas.pack()",
+        "detail": "03_erase_canvas",
+        "documentation": {}
+    },
+    {
+        "label": "CELL_SIZE",
+        "kind": 5,
+        "importPath": "03_erase_canvas",
+        "description": "03_erase_canvas",
+        "peekOfCode": "CELL_SIZE = 40\nERASER_SIZE = 10\nclass EraserApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"Eraser Canvas\")\n        # Create canvas\n        self.canvas = tk.Canvas(root, width=CANVAS_WIDTH, height=CANVAS_HEIGHT, bg=\"white\")\n        self.canvas.pack()\n        # Draw a grid of blue squares",
+        "detail": "03_erase_canvas",
+        "documentation": {}
+    },
+    {
+        "label": "ERASER_SIZE",
+        "kind": 5,
+        "importPath": "03_erase_canvas",
+        "description": "03_erase_canvas",
+        "peekOfCode": "ERASER_SIZE = 10\nclass EraserApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"Eraser Canvas\")\n        # Create canvas\n        self.canvas = tk.Canvas(root, width=CANVAS_WIDTH, height=CANVAS_HEIGHT, bg=\"white\")\n        self.canvas.pack()\n        # Draw a grid of blue squares\n        self.cells = []",
+        "detail": "03_erase_canvas",
+        "documentation": {}
+    },
+    {
+        "label": "add_three_copies",
+        "kind": 2,
+        "importPath": "04_flowing_with_data_structure",
+        "description": "04_flowing_with_data_structure",
+        "peekOfCode": "def add_three_copies(my_list, data):\n    for i in range(3):\n        my_list.append(data)\ndef main():\n    message = input(\"Enter a message to copy: \")\n    my_list = []\n    print(\"List before:\", my_list)\n    add_three_copies(my_list, message)\n    print(\"List after:\", my_list)\nif __name__ == \"__main__\":",
+        "detail": "04_flowing_with_data_structure",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "04_flowing_with_data_structure",
+        "description": "04_flowing_with_data_structure",
+        "peekOfCode": "def main():\n    message = input(\"Enter a message to copy: \")\n    my_list = []\n    print(\"List before:\", my_list)\n    add_three_copies(my_list, message)\n    print(\"List after:\", my_list)\nif __name__ == \"__main__\":\n    main()",
+        "detail": "04_flowing_with_data_structure",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "05_get_first_element",
+        "description": "05_get_first_element",
+        "peekOfCode": "def main():\n    def get_first_element(lst):\n        return lst[0]\n    def get_lst():\n        lst = []\n        element = input(\"Enter an elemet of the list or type 'stop' to stop: \")\n        while element.lower() != \"stop\":\n            lst.append(element)\n            element = input(\"Enter an elemet of the list or type 'stop' to stop: \")\n        return lst",
+        "detail": "05_get_first_element",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "06_get_last_element",
+        "description": "06_get_last_element",
+        "peekOfCode": "def main():\n    def get_last_element(lst):\n        return lst[len(lst)-1]\n    def get_lst():\n        lst = []\n        while True:\n            element = input(\"Enter an elemet of the list or type 'stop' to stop : \")\n            if element.lower() == \"stop\":\n                if lst == []:\n                    print(\"list is empty. Enter an element of the list: \")",
+        "detail": "06_get_last_element",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "07_get_list",
+        "description": "07_get_list",
+        "peekOfCode": "def main():\n    def get_last_element(lst):\n        return lst\n    def get_lst():\n        lst = []\n        while True:\n            element = input(\"Enter a value : \")\n            if element == \"\":\n                break\n            else:",
+        "detail": "07_get_list",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "08_shorten",
+        "description": "08_shorten",
+        "peekOfCode": "def main():\n    Length_of_list = int(input(\"Please enter the maximum length of the list: \"))\n    def shorten(lst):\n        while len(lst) > Length_of_list:\n            last_elem = lst.pop()\n            print(\"Deleted element:\", last_elem)\n        print(lst)\n# There is no need to edit code beyond this point\n    def get_lst():\n        \"\"\"",
+        "detail": "08_shorten",
+        "documentation": {}
+    }
+]

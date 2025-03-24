@@ -1,0 +1,56 @@
+[
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "01_print_events",
+        "description": "01_print_events",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            numbers = int(input(\"Enter number do you want to print even numbers: \"))\n            if numbers <= 0:\n                print(\"Please enter a number greater than 0.\")\n                continue\n            break\n        except ValueError:\n            print(\"Please enter a valid number.\")",
+        "detail": "01_print_events",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "02_international_voting_age",
+        "description": "02_international_voting_age",
+        "peekOfCode": "def main():\n    PETURKSBOUIPO_AGE : int = 16\n    STANLAU_AGE : int = 25\n    MAYENGUA_AGE : int = 48\n    while True:\n        try:\n            age = int(input(\"Enter your age: \"))\n            if age < 0:\n                print(\"Please enter a positive number.\")\n                continue",
+        "detail": "02_international_voting_age",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "03_leap_year",
+        "description": "03_leap_year",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            year = int(input(\"Enter a year: \"))\n            if year <= 0:\n                print(\"Please enter a positive number.\")\n                continue\n            break\n        except ValueError:\n            print(\"Please enter a valid number.\")",
+        "detail": "03_leap_year",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "04_tall_enough_to_ride",
+        "description": "04_tall_enough_to_ride",
+        "peekOfCode": "def main():\n  while True:\n    try:\n      height  = str(input(\"How tall are you? \"))\n      if height == \"\":\n        print()\n        break\n      if height.isalpha():\n        print(\"Invalid output\")\n        continue",
+        "detail": "04_tall_enough_to_ride",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "05_random_numbers",
+        "description": "05_random_numbers",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            numbers = int(input(\"Enter number do you want to print random numbers: \"))\n            if numbers <= 0:\n                print(\"Please enter a number greater than 0.\")\n                continue\n            break\n        except ValueError:\n            print(\"Please enter a valid number.\")",
+        "detail": "05_random_numbers",
+        "documentation": {}
+    }
+]

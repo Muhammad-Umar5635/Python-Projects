@@ -1,0 +1,155 @@
+[
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "roll_dice",
+        "kind": 2,
+        "importPath": "01_dicesimulator",
+        "description": "01_dicesimulator",
+        "peekOfCode": "def roll_dice(numnber_of_times):\n    total = 0\n    for i in range(1,numnber_of_times + 1):\n        random_number = random.randint(1,Num_sides) \n        print(f\"{i}. Die number is : {random_number}\")\n        total += random_number\n    print(f\"Your Total score is :{total}\")\ndef main():\n    while True:\n        try:",
+        "detail": "01_dicesimulator",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "01_dicesimulator",
+        "description": "01_dicesimulator",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            numbers_of_times = int(input(\"Enter number you want to die roll :\"))\n            if numbers_of_times > 0:\n                roll_dice(numbers_of_times)\n                break\n        except ValueError:\n            print(\"Invalid input.\")\n            continue",
+        "detail": "01_dicesimulator",
+        "documentation": {}
+    },
+    {
+        "label": "Num_sides",
+        "kind": 5,
+        "importPath": "01_dicesimulator",
+        "description": "01_dicesimulator",
+        "peekOfCode": "Num_sides = 6\n# This program is used to show how variable scope works.\ndef roll_dice(numnber_of_times):\n    total = 0\n    for i in range(1,numnber_of_times + 1):\n        random_number = random.randint(1,Num_sides) \n        print(f\"{i}. Die number is : {random_number}\")\n        total += random_number\n    print(f\"Your Total score is :{total}\")\ndef main():",
+        "detail": "01_dicesimulator",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "02_Energy_calculation",
+        "description": "02_Energy_calculation",
+        "peekOfCode": "def main():\n    c= 299792458 #speed of light in m/s\n    while True:\n        try:\n            mass_in_kg = float(input(\"Enter mass in kilograms: \"))\n            if mass_in_kg <=0:\n                print(\"Invalid input.\")\n                continue\n            else:\n                break",
+        "detail": "02_Energy_calculation",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "03_feet_to_inches",
+        "description": "03_feet_to_inches",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            feet = float(input(\"Enter the number of feet: \"))\n            if feet > 0:\n                inches = feet * Inches_In_Foot\n                print(f\"{feet} feet is equal to {inches} inches.\")\n                break\n            else:\n                print(\"Invalid input. Please enter a positive number.\")",
+        "detail": "03_feet_to_inches",
+        "documentation": {}
+    },
+    {
+        "label": "Inches_In_Foot",
+        "kind": 5,
+        "importPath": "03_feet_to_inches",
+        "description": "03_feet_to_inches",
+        "peekOfCode": "Inches_In_Foot = 12\ndef main():\n    while True:\n        try:\n            feet = float(input(\"Enter the number of feet: \"))\n            if feet > 0:\n                inches = feet * Inches_In_Foot\n                print(f\"{feet} feet is equal to {inches} inches.\")\n                break\n            else:",
+        "detail": "03_feet_to_inches",
+        "documentation": {}
+    },
+    {
+        "label": "pythagorean_theorem",
+        "kind": 2,
+        "importPath": "04_pythagorean_theorem",
+        "description": "04_pythagorean_theorem",
+        "peekOfCode": "def pythagorean_theorem(a, b):\n    c = math.sqrt(a**2 + b**2)\n    return c\ndef main():\n    while True:\n        try:\n            a = float(input(\"Enter the length of side \\\"AB\\\": \"))\n            b = float(input(\"Enter the length of side \\\"BC\\\": \"))\n            if a > 0 and b > 0:\n                c = pythagorean_theorem(a, b)",
+        "detail": "04_pythagorean_theorem",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "04_pythagorean_theorem",
+        "description": "04_pythagorean_theorem",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            a = float(input(\"Enter the length of side \\\"AB\\\": \"))\n            b = float(input(\"Enter the length of side \\\"BC\\\": \"))\n            if a > 0 and b > 0:\n                c = pythagorean_theorem(a, b)\n                print(f\"The length of the hypotenuse \\\"AC\\\" is: {c:.2f}\")\n                break\n            else:",
+        "detail": "04_pythagorean_theorem",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "05_remainder_divison",
+        "description": "05_remainder_divison",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            number1 = int(input(\"Please Enter an integer to be divided: \"))\n            number2 = int(input(\"Please Enter an integer to divide by: \"))\n            if number1 > 0 and number2 > 0:\n                remainder = number1 % number2\n                quotient = number1 // number2\n                print(f\"The remainder when {number1} is divided by {number2} is: {remainder}\")\n                print(f\"The quotient when {number1} is divided by {number2} is: {quotient}\")",
+        "detail": "05_remainder_divison",
+        "documentation": {}
+    },
+    {
+        "label": "roll_dice",
+        "kind": 2,
+        "importPath": "06_rolldice",
+        "description": "06_rolldice",
+        "peekOfCode": "def roll_dice(numnber_of_times):\n    total = 0\n    for i in range(1,numnber_of_times + 1):\n        random_number = random.randint(1,Num_sides) \n        print(f\"{i}. Die number is : {random_number}\")\n        total += random_number\n    print(f\"Your Total score is :{total}\")\ndef main():\n    while True:\n        try:",
+        "detail": "06_rolldice",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "06_rolldice",
+        "description": "06_rolldice",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            numbers_of_times = int(input(\"Enter number you want to die roll :\"))\n            if numbers_of_times > 0:\n                roll_dice(numbers_of_times)\n                break\n        except ValueError:\n            print(\"Invalid input.\")\n            continue",
+        "detail": "06_rolldice",
+        "documentation": {}
+    },
+    {
+        "label": "Num_sides",
+        "kind": 5,
+        "importPath": "06_rolldice",
+        "description": "06_rolldice",
+        "peekOfCode": "Num_sides = 6\n# This program is used to show how variable scope works.\ndef roll_dice(numnber_of_times):\n    total = 0\n    for i in range(1,numnber_of_times + 1):\n        random_number = random.randint(1,Num_sides) \n        print(f\"{i}. Die number is : {random_number}\")\n        total += random_number\n    print(f\"Your Total score is :{total}\")\ndef main():",
+        "detail": "06_rolldice",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "07_seconds_in_year_calculator",
+        "description": "07_seconds_in_year_calculator",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            year = int(input(\"Enter a year: \"))\n            if year >=1:\n                seconds_in_year =year * 365 * 24 * 60 * 60\n                print(f\"There are {seconds_in_year} seconds in {year} year.\")\n                break\n            else:\n                print(\"Invalid input. Please enter a year greater than or equal to 1.\")",
+        "detail": "07_seconds_in_year_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "08_tiny_mad_lib",
+        "description": "08_tiny_mad_lib",
+        "peekOfCode": "def main():\n    Adjective = str(input(\"Please type an adjective and press enter: \"))\n    Noun = str(input(\"Please type a noun and press enter: \"))\n    Verb = str(input(\"Please type a verb and press enter: \"))\n    print(f\"{sentence_start} {Adjective} {Noun} {Verb}!\")\nif __name__ == \"__main__\":\n    main()",
+        "detail": "08_tiny_mad_lib",
+        "documentation": {}
+    },
+    {
+        "label": "sentence_start",
+        "kind": 5,
+        "importPath": "08_tiny_mad_lib",
+        "description": "08_tiny_mad_lib",
+        "peekOfCode": "sentence_start = \"Panaversity is fun. I learned to program and used Python to make my\"\ndef main():\n    Adjective = str(input(\"Please type an adjective and press enter: \"))\n    Noun = str(input(\"Please type a noun and press enter: \"))\n    Verb = str(input(\"Please type a verb and press enter: \"))\n    print(f\"{sentence_start} {Adjective} {Noun} {Verb}!\")\nif __name__ == \"__main__\":\n    main()",
+        "detail": "08_tiny_mad_lib",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "00_joke_boat",
+        "description": "00_joke_boat",
+        "peekOfCode": "def main():\n    while True:\n        User_input = input(\"What do you want? \").strip().lower()\n        if \"joke\" in User_input :\n            print( 'Here is a joke for you! Panaversity GPT - Sophia is heading out to the grocery store. A programmer tells her: get a liter of milk, and if they have eggs, get 12. Sophia returns with 13 liters of milk. The programmer asks why and Sophia replies: \\'because they had eggs\\'')\n            break\n        else:\n            print(\"No joke for you, Sorry I only tell jokes.\")\n            continue\nif __name__ == \"__main__\": ",
+        "detail": "00_joke_boat",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "01_double_it",
+        "description": "01_double_it",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            num = int(input(\"Enter a number: \"))\n            if num >= 100 or num < 0:\n                print(\"The number is must be in between 0 and 100.\")\n                continue\n            break\n        except ValueError:\n            print(\"Enter a valid number.\")",
+        "detail": "01_double_it",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "02_liftoff",
+        "description": "02_liftoff",
+        "peekOfCode": "def main():\n    for i in range(10, 0, -1):\n        print(i,end=' ')\n    print(\"Liftoff!\")\nif __name__ == \"__main__\": \n    main()",
+        "detail": "02_liftoff",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "03_guess_my_number",
+        "description": "03_guess_my_number",
+        "peekOfCode": "def main():\n    my_number = random.randint(1, 99)\n    while True:\n        try:\n            guess = int(input(\"I am thinking a number between 0 and 99... Enter a guess: \"))\n            break\n        except ValueError:\n            print(\"Enter a valid number\")\n            continue\n    while True:",
+        "detail": "03_guess_my_number",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "04_random_numbers",
+        "description": "04_random_numbers",
+        "peekOfCode": "def main():\n    while True:\n        try:\n            num = int(input(\"Enter a number: \"))\n            break\n        except ValueError:\n            print(\"Enter a valid number.\")\n            continue\n    lst = []\n    for i in range(num):",
+        "detail": "04_random_numbers",
+        "documentation": {}
+    }
+]
